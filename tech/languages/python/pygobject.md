@@ -10,7 +10,7 @@ PyGObject, also known as PyGI, is a Python extension module that gives clean and
 
 PyGObject provides full support of GObject Introspection and all of its features (callbacks, GVariant support, closures, sub-classing, etc.).
 
-To install PyGObject on Fedora, run:
+To install PyGObject on Fedora, run
 
 ```
 $ sudo dnf install pygobject3 python3-gobject
@@ -26,7 +26,7 @@ gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 ```
 
-In the beginning, we have to import the Gtk module to be able to access GTK+’s classes and functions. Since a user’s system can have multiple versions of GTK+ installed at the same, we want to make sure that we when we import Gtk that it referrs to GTK+ 3 and not any other version of the library, which is the purpose of statement gi.require_version('Gtk', '3.0').
+In the beginning, we have to import the Gtk module to be able to access GTK+’s classes and functions. Since a user’s system can have multiple versions of GTK+ installed at the same time, we want to make sure that we when we import Gtk that it referrs to GTK+ 3 and not any other version of the library, which is the purpose of statement gi.require_version('Gtk', '3.0').
 
 ```
 win = Gtk.Window()
@@ -44,7 +44,7 @@ After creating the window, we connect its delete event to ensure that the applic
 win.set_title("Hello World")
 ```
 
-In the line above we set the window title to be a string of our choice, in this case: "Hello World".
+In the line above we set the window title to be a string of our choice, in this case "Hello World".
 
 ```
 win.show_all()
@@ -57,7 +57,7 @@ Gtk.main()
 
 Finally, we start the GTK+ processing loop which we quit when the window is closed.
 
-To run the program, open a terminal, change to the directory of the file, and enter:
+To run the program, open a terminal, change to the directory of the file, and enter
 
 ```
 $ python hello.py
